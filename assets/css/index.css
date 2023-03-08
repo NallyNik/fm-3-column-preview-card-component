@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+}
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: xx-large;
+    color: hsl(0, 0%, 95%);
+}
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: small;
+    line-height: 1.5;
+}
+body {
+    height: fit-content;
+    background-color: hsl(0, 0%, 95%);
+}
+main {
+    width: fit-content;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: aqua;
+}
+section {
+    max-width: 14rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.main__sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.main__sedans button {
+    color: hsl(31, 77%, 52%);
+}
+.main__suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.main__suvs button {
+    color: hsl(184, 100%, 22%);
+}
+.main__luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+.main__luxury button {
+    color: hsl(179, 100%, 13%);
+}
+button {
+    width: fit-content;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+}
+button:hover {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: -1;
+    text-align: center;
+    white-space: pre;
+}
+.attribution {
+    font-size: 0.8rem;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+.attribution a:hover {
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        flex-direction: row;
+    }
+    section {
+        width: 10rem;
+    }
+    footer {
+        white-space: normal;
+        bottom: 0;
+    }
+}
